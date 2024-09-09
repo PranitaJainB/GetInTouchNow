@@ -7,8 +7,9 @@
   width: 100%;
   height: 133px;
   width: 626px;
-  margin-left: 452px;
+  /* margin-left: 452px; */
   margin-top: 67px;
+  text-align: center;
 }
 
 .title {
