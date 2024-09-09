@@ -5,6 +5,9 @@
 npm run dev
 ```
 
+![image](https://github.com/user-attachments/assets/8f503ba8-cbc1-4e15-bfb3-9b2e915386f2)
+
+
 ### Figma Design Link
 
 [View Figma Design](https://www.figma.com/design/rephrU2FVgN8MFz6XhnP51/Learn-React-with-10-Projects?node-id=2-5&t=67gWbHg4QidL97sJ-0)
@@ -75,5 +78,6 @@ npm run dev
 13. after you find particular font into google font , click GET FONT . Inside click "Import " copy 2 things from here  : @import...,    font-family: "Inter", sans-serif;
 14. if you are using module CSS then all className will be written into the {} ,  <div className={styles.heading}>  , here if you have to append multiple class name then use  <div className={`${styles.heading}` anotherClassName}>
 15. you can even print styles value to see if in cosole you see all other as direct key:value pair of the object styles
+16. when you have to see hight and width
     
 
