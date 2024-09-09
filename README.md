@@ -10,7 +10,7 @@ npm run dev
 
 ### Figma Design Link
 
-[View Figma Design](https://www.figma.com/design/rephrU2FVgN8MFz6XhnP51/Learn-React-with-10-Projects?node-id=2-5&t=67gWbHg4QidL97sJ-0)
+
 [View Figma Design](https://www.figma.com/community/file/1349347949687912630/contact-form-page)
 
 
