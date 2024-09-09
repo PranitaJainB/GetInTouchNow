@@ -50,12 +50,11 @@ npm run dev
 4. Pay attention to issues related to setting margin, height, and width.
 5. Design one layer at a time for a cleaner approach.
 6. tell chatgpt to produce correct md file , don't use the manual copy instead use copy button at the bottom
-7. 
+7. run following command to run the project's index.html file
+   ```bash
+   npm run dev
 
-
-    ```
-
-   _This command runs a script named `dev` defined in your project's `package.json` file under the "scripts" section._
+ _This command runs a script named `dev` defined in your project's `package.json` file under the "scripts" section._
 
 7. For text formatting in `.md` files, search for more options to understand various formatting features.
 
@@ -67,5 +66,6 @@ npm run dev
 4. Pay attention to issues related to setting margin, height, and width.
 5. Design one layer at a time for a cleaner approach.
 6. tell chatgpt to produce correct md file , don't use the manual copy instead use copy button at the bottom
-7. 
+7. Why are you creating the html - css in different project for testing , when you can create them write inside main project .
+8. we will be using css modules this time so that at top level there is no conflict about style class names.
 
