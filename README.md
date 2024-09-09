@@ -68,4 +68,5 @@ npm run dev
 6. tell chatgpt to produce correct md file , don't use the manual copy instead use copy button at the bottom
 7. Why are you creating the html - css in different project for testing , when you can create them write inside main project .
 8. we will be using css modules this time so that at top level there is no conflict about style class names.
+9. delet content of index.css , app.css which was default 
 
