@@ -69,4 +69,8 @@ npm run dev
 7. Why are you creating the html - css in different project for testing , when you can create them write inside main project .
 8. we will be using css modules this time so that at top level there is no conflict about style class names.
 9. delet content of index.css , app.css which was default  . Global CSS vs Module CSS. How it works ?
+10. use shortcut to print react function using snippet : ***rafce***  = react arrow function compoenent with export
+11. when I renamed , i was facing the problem related to new name not recognize . try to open close VS Code to clear the cache.
+12. to see what font is used , goto typography and check font-family: Inter;
+13. after you find particular font into google font , click GET FONT . Inside click "Import " copy 2 things from here  : @import...,    font-family: "Inter", sans-serif;
 
