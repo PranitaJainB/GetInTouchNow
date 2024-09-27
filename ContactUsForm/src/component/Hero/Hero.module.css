@@ -94,18 +94,6 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
-
-input::placeholder,
-.submit {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.15px;
-}
-
 .email,
 .phone,
 .message {
@@ -120,6 +108,19 @@ input::placeholder,
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
+
+input::placeholder,
+.submit {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.15px;
+}
+
+
 .submit {
   display: flex;
   padding: 12px 10px;

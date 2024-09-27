@@ -78,6 +78,9 @@ npm run dev
 13. after you find particular font into google font , click GET FONT . Inside click "Import " copy 2 things from here  : @import...,    font-family: "Inter", sans-serif;
 14. if you are using module CSS then all className will be written into the {} ,  <div className={styles.heading}>  , here if you have to append multiple class name then use  <div className={`${styles.heading}` anotherClassName}>
 15. you can even print styles value to see if in cosole you see all other as direct key:value pair of the object styles
-16. when you have to see hight and width
+16. when you have to see hight and width---incomplete 
+17. ask chatGPT to find difference b/w query params and route params
+18. When user enters some value , they are going into query params . which is causing the refreshing of page as well. if you log event which is being passed from the function you can see input entered by user as well.
+19. also when you click a button then you should be able to see the text as which button was clicked , via call or via chat, so let's also create 2 buttons , 
     
 
