@@ -89,8 +89,9 @@ npm run dev
 24. usestate timestamp = 1.20
 25. when you try to access js variable in clg then if it's undefined then it shows object object
 26. you pass variable or not , it will always be undefined  for boolean . so you don't have to define what is coming and what is not coming inside , but if this is typescript - you have to mention things as optional. 
-
-27. 
+27.  <button onClick={(e)=>sendToParent(e)}/  >. and  <button onClick={(e)=>{sendToParent(e)}}/  >. what is difference -- there is no difference ! just immediate return and block execution of function code. it might be different if you have multiple lines in function.
+28.  <button onClick={sendToParent()}/  >. and  <button onClick={sendToParent}/  >. what is difference -->sendToParent() is invoked immediately when the component renders,In the second version, sendToParent is passed as a reference, and it will be called when the button is clicked.2nd one is correct.
+29. const sendToParent = (e) => {onBtnClick(e.target.name);};  but I assigned  <button onClick={sendToParent}  how on click event is getting passed as paramter , even though I havn't passed it on click--->>> .  React automatically passes the event object as the first argument to the event handler function. So, when the button is clicked, sendToParent gets called with the event, allowing you to access e.target.name inside the function. This is a core feature of how event handlers work in React.
 
     
-
+![alt text](image-1.png)
