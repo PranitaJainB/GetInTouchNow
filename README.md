@@ -1,11 +1,14 @@
 
+![alt text](image-1.png)
+
+
 ### How to Run the Project
 
 ```bash
 npm run dev
 ```
 
-![image](https://github.com/user-attachments/assets/8f503ba8-cbc1-4e15-bfb3-9b2e915386f2)
+
 
 
 ### Figma Design Link
@@ -92,6 +95,7 @@ npm run dev
 27.  <button onClick={(e)=>sendToParent(e)}/  >. and  <button onClick={(e)=>{sendToParent(e)}}/  >. what is difference -- there is no difference ! just immediate return and block execution of function code. it might be different if you have multiple lines in function.
 28.  <button onClick={sendToParent()}/  >. and  <button onClick={sendToParent}/  >. what is difference -->sendToParent() is invoked immediately when the component renders,In the second version, sendToParent is passed as a reference, and it will be called when the button is clicked.2nd one is correct.
 29. const sendToParent = (e) => {onBtnClick(e.target.name);};  but I assigned  <button onClick={sendToParent}  how on click event is getting passed as paramter , even though I havn't passed it on click--->>> .  React automatically passes the event object as the first argument to the event handler function. So, when the button is clicked, sendToParent gets called with the event, allowing you to access e.target.name inside the function. This is a core feature of how event handlers work in React.
+30. In your form, the email and phone inputs lack a name attribute, which is required for the data to be included in the query parameters upon submission. http://localhost:5173/?firstName=er&lastName=ret&submitButton=  you see submit button should not have the name property as this is evedient that it is visible in the url which is incorrect
 
     
-![alt text](image-1.png)
+

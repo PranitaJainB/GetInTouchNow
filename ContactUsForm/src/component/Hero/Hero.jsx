@@ -5,12 +5,19 @@ import { RxRocket } from "react-icons/rx";
 import Button from "../Button/Button";
 
 const Hero = () => {
-  const onBtnClick = (btnName) =>    
+  const onBtnClick = (btnName) =>
     console.log(`User clicked ${btnName} button, this is from Child value`);
-  
-  const inputLog = (e) => 
-    console.log(`${e.target.name} : ${e.target.value} `);
-  
+
+  const inputLog = (e) => console.log(`${e.target.name} : ${e.target.value} `);
+  const onDetailSubmit = (e) => {
+    console.log(`${e.target[0].name} : ${e.target[0].value} `);
+    console.log(`${e.target[1].name} : ${e.target[1].value} `);
+    console.log(`${e.target[2].name} : ${e.target[2].value} `);
+    console.log(`${e.target[3].name} : ${e.target[3].value} `);
+    console.log(`${e.target[4].name} : ${e.target[4].value} `);
+  }
+
+
 
   return (
     <div className={style.hero}>
@@ -22,24 +29,44 @@ const Hero = () => {
             collaboration illuminate our skies.
           </div>
         </div>
-        <div className={style.formBody}>
+        <form className={style.formBody} onSubmit={onDetailSubmit}>
           <div className={style.name}>
-            <input name="firstName"  className={style.fname} placeholder="First Name" onInput={inputLog}></input>
-            <input name="lastName" className={style.lname} placeholder="Last Name"></input>
+            <input
+              name="firstName"
+              className={style.fname}
+              placeholder="First Name"
+              onInput={inputLog}
+            ></input>
+            <input
+              name="lastName"
+              className={style.lname}
+              placeholder="Last Name"
+            ></input>
           </div>
-          <input className={style.email} placeholder="Email"></input>
-          <input className={style.phone} placeholder="Phone"></input>
-          <input className={style.message} placeholder="Message"></input>
-          <Button name="submitButton" text="Submit" icon={<RxRocket />} btnPrimary={true} onBtnClick={onBtnClick}  />
-          <div className={style.name}>
-            <Button
+          <input name="phone" className={style.phone} placeholder="Phone"></input>
+          <input name="email" className={style.email} placeholder="Email"></input>
+          <input name="msg" className={style.message} placeholder="Message"></input>
+          <Button           
+            type="submit"
+            text="Submit"
+            icon={<RxRocket />}
+            btnPrimary={true}
+           
+          />
+        </form>
+        <div className={style.name}>
+          <Button
             name="chatButton"
-              text="Chat"
-              icon={<IoChatboxEllipsesOutline />}
-              onBtnClick={onBtnClick}
-            />
-            <Button name="callButton" text="Call" icon={<IoMdCall />} onBtnClick={onBtnClick} />
-          </div>
+            text="Chat"
+            icon={<IoChatboxEllipsesOutline />}
+            onBtnClick={onBtnClick}
+          />
+          <Button
+            name="callButton"
+            text="Call"
+            icon={<IoMdCall />}
+            onBtnClick={onBtnClick}
+          />
         </div>
       </div>
       <div className={style.imageContainer}>
