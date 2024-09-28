@@ -76,8 +76,21 @@ npm run dev
 11. when I renamed , i was facing the problem related to new name not recognize . try to open close VS Code to clear the cache.
 12. to see what font is used , goto typography and check font-family: Inter;
 13. after you find particular font into google font , click GET FONT . Inside click "Import " copy 2 things from here  : @import...,    font-family: "Inter", sans-serif;
-14. if you are using module CSS then all className will be written into the {} ,  <div className={styles.heading}>  , here if you have to append multiple class name then use  <div className={`${styles.heading}` anotherClassName}>
+14. if you are using module CSS then all className will be written into the {} ,  <div className={styles.heading}>  , here if you have to append multiple class name then use  <div className={`${styles.heading}` anotherClassName}> or  <button className={`${style.submit} ${style.btn_purple}`} >  it is because clearly style.submit is the JS variable and not the simple string as this is evedient that you are accessing it with object with dot operator
 15. you can even print styles value to see if in cosole you see all other as direct key:value pair of the object styles
-16. when you have to see hight and width
+16. when you have to see hight and width---incomplete 
+17. ask chatGPT to find difference b/w query params and route params
+18. When user enters some value , they are going into query params . which is causing the refreshing of page as well. if you log event which is being passed from the function you can see input entered by user as well.
+19. also when you click a button then you should be able to see the text as which button was clicked , via call or via chat, so let's also create 2 buttons , 1:09 timestamp
+20. there is so much of CSS related task which I'm not able to do in react project because in react I canot see what are the properties set for the class . better you dig more into it or either design separately . 
+21. even though I can see styles applied but name of style class is getting encoded . how to find real name from project
+22. he also taught in this how to get icons from react icon library . 29:27 timestamp
+23. he also taught that how we will build two button from single component by passing icon and button name
+24. usestate timestamp = 1.20
+25. when you try to access js variable in clg then if it's undefined then it shows object object
+26. you pass variable or not , it will always be undefined  for boolean . so you don't have to define what is coming and what is not coming inside , but if this is typescript - you have to mention things as optional. 
+
+27. 
+
     
 

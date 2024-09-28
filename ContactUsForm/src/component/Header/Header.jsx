@@ -2,7 +2,7 @@ import styles from "./Header.module.css"
 
 
 const Header = () => {
-  console.log(styles)
+
   return (
     <div className={styles.heading}>
       <div className={styles.title}>Get in <span className={styles.touch}>touch</span> </div>
