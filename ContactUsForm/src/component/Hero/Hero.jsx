@@ -5,13 +5,12 @@ import { RxRocket } from "react-icons/rx";
 import Button from "../Button/Button";
 
 const Hero = () => {
-  const onBtnClick = (btnName) => {
-   
+  const onBtnClick = (btnName) =>    
     console.log(`User clicked ${btnName} button, this is from Child value`);
-  };
-  const parentLog = () => {
-    console.log(`User clicked button, this is from Parent,no value`);
-  };
+  
+  const inputLog = (e) => 
+    console.log(`${e.target.name} : ${e.target.value} `);
+  
 
   return (
     <div className={style.hero}>
@@ -25,8 +24,8 @@ const Hero = () => {
         </div>
         <div className={style.formBody}>
           <div className={style.name}>
-            <input className={style.fname} placeholder="First Name"></input>
-            <input className={style.lname} placeholder="Last Name"></input>
+            <input name="firstName"  className={style.fname} placeholder="First Name" onInput={inputLog}></input>
+            <input name="lastName" className={style.lname} placeholder="Last Name"></input>
           </div>
           <input className={style.email} placeholder="Email"></input>
           <input className={style.phone} placeholder="Phone"></input>
