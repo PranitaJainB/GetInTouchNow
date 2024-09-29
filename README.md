@@ -96,6 +96,13 @@ npm run dev
 28.  <button onClick={sendToParent()}/  >. and  <button onClick={sendToParent}/  >. what is difference -->sendToParent() is invoked immediately when the component renders,In the second version, sendToParent is passed as a reference, and it will be called when the button is clicked.2nd one is correct.
 29. const sendToParent = (e) => {onBtnClick(e.target.name);};  but I assigned  <button onClick={sendToParent}  how on click event is getting passed as paramter , even though I havn't passed it on click--->>> .  React automatically passes the event object as the first argument to the event handler function. So, when the button is clicked, sendToParent gets called with the event, allowing you to access e.target.name inside the function. This is a core feature of how event handlers work in React.
 30. In your form, the email and phone inputs lack a name attribute, which is required for the data to be included in the query parameters upon submission. http://localhost:5173/?firstName=er&lastName=ret&submitButton=  you see submit button should not have the name property as this is evedient that it is visible in the url which is incorrect
+31. page gets refresh on click of submit btn , as you can see in one of the commit , and also notice how params are sent to server in url . Forms allow users to submit data to a server for processing, such as in sign-ups or surveys.
+32. to avoid above situation we have to use preventdefault . 
+33. http://localhost:5173/  v/s http://localhost:5173/?name=aa&email=abc@gmail.com when you wrote e.preventDefault() then you should have went back to home instead of checking the effects on http://localhost:5173/?name=aa&email=abc@gmail.com . It took long time to understand that why it is re-rendering =because URL was wrong.
+34. it took so long to find the actual spelling mistake at e.prevenDefault();  :( :( 
+35. after e.preventDefault() was working properly page was not re-rendering!!!
+36. if prop or state changes then only component re-renders.
+
 
     
 
