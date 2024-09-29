@@ -12,6 +12,7 @@
   width: 1092px;
   /* margin-left: 2px; */
   margin-top: 67px;
+  color: #fff;
 }
 
 .formContainer {
@@ -42,7 +43,7 @@
 }
 
 .formTitle {
-  color: #fff;
+ 
 
   /* H2 */
   font-family: Inter;

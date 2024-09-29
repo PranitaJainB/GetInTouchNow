@@ -5,14 +5,16 @@ import { RxRocket } from "react-icons/rx";
 import Button from "../Button/Button";
 
 const Hero = () => {
+  let thanksMsg ;
   console.log("component HERO just re-rendered" + Math.random());
   const onBtnClick = (btnName) =>
     console.log(`User clicked ${btnName} button, this is from Child value`);
 
   const inputLog = (e) => console.log(`${e.target.name} : ${e.target.value} `);
   const onDetailSubmit = (e) => {
-    e.preventDefault();   
-
+    e.preventDefault(); 
+    thanksMsg = `Thank you ${e.target[0].value}  ${e.target[1].value} for connecting with us`
+    console.log(thanksMsg);
     console.log(`${e.target[0].name} : ${e.target[0].value} `);
     console.log(`${e.target[1].name} : ${e.target[1].value} `);
     console.log(`${e.target[2].name} : ${e.target[2].value} `);
@@ -67,6 +69,7 @@ const Hero = () => {
             btnPrimary={true}
           />
         </form>
+        <div>{thanksMsg}</div>
         <div className={style.name}>
           <Button
             name="chatButton"
