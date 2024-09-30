@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Button.module.css";
 
-const Button = ({ text, icon, btnPrimary,onBtnClick, ...props }) => {
+const Button = ({ text, icon, btnPrimary, onBtnClick , ...props }) => {
  
   const sendToParent = (e) => {
     
@@ -9,7 +9,7 @@ const Button = ({ text, icon, btnPrimary,onBtnClick, ...props }) => {
   };
   return (
     <button     
-      onClick={sendToParent}
+    onClick={onBtnClick ? sendToParent : undefined} 
       className={`${style.submit} ${
         btnPrimary ? style.btn_purple : style.btn_connectVia
       }`}

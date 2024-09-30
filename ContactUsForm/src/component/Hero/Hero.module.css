@@ -7,21 +7,18 @@
   padding: 20px;
   align-items: center;
   gap: 30px;
-  /* background-color: yellow; */
+  color: #fff;
   height: 576px;
   width: 1092px;
-  /* margin-left: 2px; */
-  margin-top: 67px;
 }
 
 .formContainer {
-  height: 506px;
+  margin-top: -100px;
   width: 436px;
   display: flex;
-  padding: 40px;
+  padding: 0 40px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 41px;
   background-color: transparent;
 }
 
@@ -36,22 +33,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
   background-color: transparent;
+  margin-bottom: 25px;
 }
 
 .formTitle {
-  color: #fff;
-
-  /* H2 */
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.6px;
-  width: 426px;
 }
 
 .formSubtitle {
@@ -78,9 +71,9 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  align-self: stretch;
- 
+  align-self: stretch; 
 }
+
 .formBody input{
 color: white;
 }
@@ -98,6 +91,7 @@ color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
+
 .email,
 .phone,
 .message {
@@ -124,16 +118,12 @@ input::placeholder,
   letter-spacing: -0.15px;
 }
 
-
-
-
 .rocketImg {
   width: 20px;
   height: 15px;
-  /* transform: rotate(0deg);  */
-  /* background: url(<path-to-image>) lightgray -28.242px -3.287px / 649.019% 314.745% no-repeat; */
   mix-blend-mode: screen;
 }
+
 .imageContainer {
   display: flex;
   flex-direction: column;
@@ -147,7 +137,6 @@ input::placeholder,
   width: 516px;
   height: 536px;
   border-radius: 12px;
-  /* background: linear-gradient(0deg, rgba(10, 13, 23, 0.95) 20.4%, rgba(10, 13, 23, 0.00) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat; */
 }
 .imageDesc {
   display: flex;
@@ -162,8 +151,6 @@ input::placeholder,
 .imageDescQuote {
   align-self: stretch;
   color: var(--Pure-White, #fff);
-
-  /* Text */
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -172,6 +159,7 @@ input::placeholder,
   letter-spacing: -0.16px;
   opacity: 0.7;
 }
+
 .imageDescAuthor {
   opacity: 0.8;
   color: #fff;
@@ -189,4 +177,8 @@ input::placeholder,
   align-items: flex-start;
   gap: 14px;
   align-self: stretch;
+}
+
+.thanksMsg{
+  margin: 0px;
 }
