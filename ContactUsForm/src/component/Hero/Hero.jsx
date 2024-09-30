@@ -16,12 +16,6 @@ const Hero = () => {
     e.preventDefault(); 
     let msg = `Thank you ${e.target[0].value}  ${e.target[1].value} for connecting with us`
     setThanksMsg(msg)
-    console.log(thanksMsg);
-    console.log(`${e.target[0].name} : ${e.target[0].value} `);
-    console.log(`${e.target[1].name} : ${e.target[1].value} `);
-    console.log(`${e.target[2].name} : ${e.target[2].value} `);
-    console.log(`${e.target[3].name} : ${e.target[3].value} `);
-    console.log(`${e.target[4].name} : ${e.target[4].value} `);
   };
 
   return (
@@ -41,27 +35,41 @@ const Hero = () => {
               className={style.fname}
               placeholder="First Name"
               onInput={inputLog}
+              required
             ></input>
             <input
               name="lastName"
               className={style.lname}
               placeholder="Last Name"
+              onInput={inputLog}
+              required
             ></input>
           </div>
           <input
             name="phone"
+            type="tel"
             className={style.phone}
             placeholder="Phone"
+            onInput={(e)=>{
+              e.target.value = e.target.value.replace(/[^0-9+-]/g, '');
+              inputLog;}}
+              required
+              maxLength="15" 
           ></input>
           <input
             name="email"
             className={style.email}
             placeholder="Email"
+            onInput={inputLog}
+              required
           ></input>
           <input
             name="msg"
             className={style.message}
             placeholder="Message"
+            onInput={inputLog}
+              required
+              minLength="10" 
           ></input>
          
           <Button
