@@ -3,9 +3,10 @@ import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { RxRocket } from "react-icons/rx";
 import Button from "../Button/Button";
+import { useState } from "react";
 
 const Hero = () => {
-  let thanksMsg ;
+  const [thanksMsg,setThanksMsg] = useState("") ;
   console.log("component HERO just re-rendered" + Math.random());
   const onBtnClick = (btnName) =>
     console.log(`User clicked ${btnName} button, this is from Child value`);
@@ -13,7 +14,8 @@ const Hero = () => {
   const inputLog = (e) => console.log(`${e.target.name} : ${e.target.value} `);
   const onDetailSubmit = (e) => {
     e.preventDefault(); 
-    thanksMsg = `Thank you ${e.target[0].value}  ${e.target[1].value} for connecting with us`
+    let msg = `Thank you ${e.target[0].value}  ${e.target[1].value} for connecting with us`
+    setThanksMsg(msg)
     console.log(thanksMsg);
     console.log(`${e.target[0].name} : ${e.target[0].value} `);
     console.log(`${e.target[1].name} : ${e.target[1].value} `);
@@ -69,7 +71,7 @@ const Hero = () => {
             btnPrimary={true}
           />
         </form>
-        <div>{thanksMsg}</div>
+        <div className="thanksMsg">{thanksMsg}</div>
         <div className={style.name}>
           <Button
             name="chatButton"

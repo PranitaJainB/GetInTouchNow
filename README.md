@@ -1,6 +1,7 @@
 
 ![alt text](image-1.png)
 
+![alt text](image.png)
 
 ### How to Run the Project
 
@@ -102,6 +103,7 @@ npm run dev
 34. it took so long to find the actual spelling mistake at e.prevenDefault();  :( :( 
 35. after e.preventDefault() was working properly page was not re-rendering!!!
 36. if prop or state changes then only component re-renders.
+37. in branch name useState : with variable no update on screen as component was not rendered. component only renders when there is the change in state / props . nothing like this happened so you don't see Thank you msg on screen. For that use "usestate"!! once we create useState , then on change of state - component is gaurenteed to re-render and hence our Thanks msg will be visible.
 
 
     
