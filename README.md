@@ -9,24 +9,15 @@
 
 ![alt text](image-4.png)
 
-### How to Run the Project
-
-```bash
-npm run dev
-```
-
-
-
 
 ### Figma Design Link
-
 
 [View Figma Design](https://www.figma.com/community/file/1349347949687912630/contact-form-page)
 
 
-**Use the comment and then Hide option to hide all comments**
 
-### My Learnings
+
+### Using README for Documenting my Learnings while creating this project
 
 #### Project Installation Tips
 
